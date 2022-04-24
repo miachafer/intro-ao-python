@@ -6,3 +6,12 @@
 # 3. Imprima uma mensagem diga o estado em que o usuário mora. 
 #    O nome do estado deve estar todo em letras maiúsculas.
 #    Utilize uma forma de formatação de string diferente da que foi usada no item 2.
+
+print('Em qual cidade você mora?')
+cidade = input()
+
+print('Em qual estado você mora?')
+estado = input()
+
+print('\nCidade: ' + cidade.lower())
+print('Estado: ' + estado.upper())

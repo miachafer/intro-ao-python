@@ -5,4 +5,4 @@
 nome = input('Qual é o seu nome?\n')
 idade = input('Qual é a sua idade?\n')
 cidade = input('Qual é a sua cidade?\n')
-print('Bem-vinda, ' + nome + '!')
+print(f'Bem-vinda, {nome}! Você tem {idade} anos de idade e mora em {cidade}.')

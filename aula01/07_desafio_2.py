@@ -13,5 +13,5 @@ cidade = input()
 print('Em qual estado você mora?')
 estado = input()
 
-print('\nCidade: ' + cidade.lower())
-print('Estado: ' + estado.upper())
+print('\nCidade: ' + cidade.upper())
+print('Estado: ' + estado.swapcase())

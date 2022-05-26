@@ -66,8 +66,7 @@ print(conta2.get_titular)
 print("CHEQUE ESPECIAL PARA CONTA CONJUNTA:")
 print(conta2.get_cheque_especial)
 
-print()
-print("------------OPERAÇÕES------------\n")
+print("\n------------OPERAÇÕES------------\n")
 
 print("DEPÓSITOS\n")
 
@@ -134,6 +133,18 @@ print("SALDO DA CONTA 2:", conta2.get_saldo)
 print("SAQUE DE 200 NA CONTA 2")
 conta2.saque(200)
 print("SALDO DA CONTA 2:", conta2.get_saldo)
+
+
+print("\n------------EXTRATOS------------\n")
+
+print("EXTRATO DA CONTA 0")
+print(conta0.get_extrato)
+print()
+print("EXTRATO DA CONTA 1")
+print(conta1.get_extrato)
+print()
+print("EXTRATO DA CONTA 2")
+print(conta2.get_extrato)
 print()
 
 ############ OUTPUT ############
@@ -214,4 +225,15 @@ SALDO DA CONTA 2: 50.0
 SAQUE DE 200 NA CONTA 2
 Saldo insuficiente.
 SALDO DA CONTA 2: 50.0
+
+------------EXTRATOS------------
+
+EXTRATO DA CONTA 0
+[{'Operação': {'Tipo': 'Depósito', 'Valor': 300, 'Status': 'Sucesso', 'Data': '26/05/2022 14:23:36'}}, {'Operação': {'Tipo': 'Saque', 'Valor': 125, 'Status': 'Sucesso', 'Data': '26/05/2022 14:23:36'}}, {'Operação': {'Tipo': 'Saque', 'Valor': 200, 'Status': 'Falha', 'Data': '26/05/2022 14:23:36'}}]
+
+EXTRATO DA CONTA 1
+[{'Operação': {'Tipo': 'Depósito', 'Valor': 500, 'Status': 'Sucesso', 'Data': '26/05/2022 14:23:36'}}, {'Operação': {'Tipo': 'Saque', 'Valor': 200, 'Status': 'Sucesso', 'Data': '26/05/2022 14:23:36'}}, {'Operação': {'Tipo': 'Saque', 'Valor': 350, 'Status': 'Sucesso', 'Data': '26/05/2022 14:23:36'}}, {'Operação': {'Tipo': 'Saque', 'Valor': 960, 'Status': 'Falha', 'Data': '26/05/2022 14:23:36'}}]
+
+EXTRATO DA CONTA 2
+[{'Operação': {'Tipo': 'Depósito', 'Valor': 700, 'Status': 'Sucesso', 'Data': '26/05/2022 14:23:36'}}, {'Operação': {'Tipo': 'Saque', 'Valor': 650, 'Status': 'Sucesso', 'Data': '26/05/2022 14:23:36'}}, {'Operação': {'Tipo': 'Saque', 'Valor': 200, 'Status': 'Falha', 'Data': '26/05/2022 14:23:36'}}]
 """
